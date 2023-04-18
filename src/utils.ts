@@ -1,4 +1,5 @@
-import { Todo } from "./pages/TodoApp";
+import { Todo } from "./model";
+
 
 export const getActiveTodosFromLocalStorage = ():Todo[] => {
   let todosList: Todo[] = JSON.parse(localStorage.getItem("activeTodos")||'[]');

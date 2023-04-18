@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import  {  useState } from 'react'
+import { AddTodoProps } from '../model';
 
-type Props={
-    handleAddTodo:(text:string)=>void ;
-}
 
-const AddTodo = ({handleAddTodo}:Props) => {
+
+const AddTodo = ({handleAddTodo}:AddTodoProps) => {
     const [text, setText] = useState<string>("");
 
     

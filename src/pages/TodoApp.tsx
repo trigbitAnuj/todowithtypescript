@@ -3,12 +3,9 @@ import AddTodo from '../components/AddTodo'
 import TodoLists from '../components/TodoLists';
 import { DragDropContext, DropResult } from 'react-beautiful-dnd';
 import { getActiveTodosFromLocalStorage, getCompletedTodosFromLocalStorage } from '../utils';
+import { Todo } from '../model';
 
- export type Todo={
-    id:number;
-    text:string;
-    isDone:boolean;
-}
+ 
 
 
 

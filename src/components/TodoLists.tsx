@@ -1,30 +1,12 @@
 import React from "react";
 import { Draggable, Droppable } from "react-beautiful-dnd";
-import { Todo } from "../pages/TodoApp";
+
 import { AiFillDelete } from "react-icons/ai";
 import { MdDone } from "react-icons/md";
+import { Props, SingleTodoProps } from "../model";
 
 
-type Props={
-  todos: Todo[],
-  handleChangeTodo:(id:number)=>void;
-  handleDeleteTodo:(id:number)=>void;
-  handleCompleteChangeTodo:(id:number)=>void 
-  handleCompleteDeleteTodo:(id:number)=>void
-  completedTodos:Todo[]
-  
-}
 
-type SingleTodoProps ={
-  key:number
-  index:number
-  todo:Todo
-  handleChangeTodo:(id:number)=>void
-  
-  handleDeleteTodo:(id:number)=>void
-
-  
-}
 
 
 
