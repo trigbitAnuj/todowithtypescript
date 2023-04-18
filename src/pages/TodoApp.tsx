@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import AddTodo from '../components/AddTodo'
 import TodoLists from '../components/TodoLists';
 import { DragDropContext, DropResult } from 'react-beautiful-dnd';
+import { getActiveTodosFromLocalStorage, getCompletedTodosFromLocalStorage } from '../utils';
 
  export type Todo={
     id:number;
@@ -13,29 +14,6 @@ import { DragDropContext, DropResult } from 'react-beautiful-dnd';
 
 
 
-// const initialTodos:Todo[]=[]
-
-
-
-const getActiveTodosFromLocalStorage =()=> {
-    let todosList = JSON.parse(localStorage.getItem("activeTodos"));
-    if (todosList) {
-      return todosList
-    } else {
-      return [];
-    }
-  };
-  const getCompletedTodosFromLocalStorage = () => {
-
-    
-
-    let todosList = JSON.parse(localStorage.getItem("completedTodos"));
-    if (todosList) {
-      return todosList
-    } else {
-      return [];
-    }
-  };
 
 const TodoApp = () => {
 
